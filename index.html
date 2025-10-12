@@ -1,0 +1,218 @@
+<!-- 
+  This HTML file is a one-page personal website for Aruna.
+  It includes sections for about, projects, experience, CV, and contact.
+  ISU-inspired colors are used, and Bootstrap 5 is included via jsDelivr CDN.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aruna - Space Technology to Power Future</title>
+  <meta name="description" content="Personal website of Aruna, a Master of Space Studies student at ISU.">
+  <meta name="author" content="Aruna">
+  <meta property="og:title" content="Aruna - Space Technology to Power Future">
+  <meta property="og:description" content="Personal website of Aruna, a Master of Space Studies student at ISU.">
+  <meta property="og:type" content="website">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <style>
+    :root {
+      --isu-blue: #0b3d91;
+      --isu-gold: #f0b429;
+      --isu-ink: #0d1b2a;
+      --isu-sky: #e6f1ff;
+    }
+    body {
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    }
+    .navbar {
+      background-color: var(--isu-blue);
+    }
+    .navbar-brand, .nav-link {
+      color: var(--isu-gold) !important;
+    }
+    .theme-toggle {
+      background-color: var(--isu-gold);
+      border: none;
+      padding: 0.5rem;
+      border-radius: 0.25rem;
+    }
+  </style>
+</head>
+<body data-bs-theme="light">
+  <a href="#main" class="visually-hidden-focusable">Skip to content</a>
+  <header>
+    <nav class="navbar navbar-expand-lg sticky-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Aruna</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+            <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+            <li class="nav-item"><a class="nav-link" href="#cv">CV</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+          </ul>
+          <button id="themeToggle" class="theme-toggle" aria-label="Toggle theme"><i class="bi bi-moon-stars"></i></button>
+        </div>
+      </div>
+    </nav>
+    <div class="container mt-5">
+      <h1>Aruna</h1>
+      <p>Space Technology to Power Future</p>
+      <button class="btn btn-primary" onclick="location.href='#projects'">Projects</button>
+      <button id="cvBtn" class="btn btn-secondary" onclick="location.href='cv.pdf'">CV</button>
+      <button class="btn btn-secondary" onclick="location.href='#contact'">Contact</button>
+      <p id="cvNote" style="display: none;">Add cv.pdf to enable the CV button</p>
+    </div>
+  </header>
+  <main id="main">
+    <section id="about" class="container mt-5">
+      <h2>About</h2>
+      <p>Short bio...</p>
+      <h3>Focus</h3>
+      <ul>
+        <li>Space Engineering</li>
+        <li>Space/Ground Design and Instrumentation</li>
+        <li>Python Programming</li>
+      </ul>
+      <h3>Tools</h3>
+      <ul>
+        <li>Python</li>
+        <li>Machine Learning Algorithms</li>
+        <li>High Performance Computing</li>
+      </ul>
+    </section>
+    <section id="projects" class="container mt-5">
+      <h2>Projects</h2>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card mb-3">
+            <div class="card-body">
+              <h5 class="card-title">CMB Lensing Constraints on Late Time Growth of Structures</h5>
+              <p class="card-text">MSc Thesis</p>
+              <ul>
+                <li>Tool: CAMB</li>
+                <li>Method: Bayesian analysis</li>
+                <li>Outcome: Phenomenological scale-independent model</li>
+              </ul>
+              <button class="btn btn-primary" onclick="location.href='https://example.com/demo'">Demo</button>
+              <button class="btn btn-secondary" onclick="location.href='https://example.com/code'">Code</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card mb-3">
+            <div class="card-body">
+              <h5 class="card-title">Extract signals from Cosmic Re-ionisation using Machine Learning Algorithms</h5>
+              <p class="card-text">MSc Thesis</p>
+              <ul>
+                <li>Tool: Python</li>
+                <li>Method: Machine Learning</li>
+                <li>Outcome: ≥ 92% accuracy</li>
+              </ul>
+              <button class="btn btn-primary" onclick="location.href='https://example.com/demo'">Demo</button>
+              <button class="btn btn-secondary" onclick="location.href='https://example.com/code'">Code</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card mb-3">
+            <div class="card-body">
+              <h5 class="card-title">Nuclear Deformation</h5>
+              <p class="card-text">BSc Thesis</p>
+              <ul>
+                <li>Tool: Literature survey</li>
+                <li>Method: Theoretical</li>
+                <li>Outcome: Understanding of nuclear shape deformation</li>
+              </ul>
+              <button class="btn btn-primary" onclick="location.href='https://example.com/demo'">Demo</button>
+              <button class="btn btn-secondary" onclick="location.href='https://example.com/code'">Code</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="experience" class="container mt-5">
+      <h2>Experience</h2>
+      <ul class="list-group">
+        <li class="list-group-item">
+          <h5>Outlier AI</h5>
+          <p>Prompt Engineer (Oct 2023 - Present)</p>
+          <p>Trained AI models to solve research-level Physics and Cosmology problems.</p>
+        </li>
+        <li class="list-group-item">
+          <h5>European Space Agency</h5>
+          <p>Archival Research Visitor Programme</p>
+          <p>Worked with Planck CMB-ground (CMB) data.</p>
+        </li>
+      </ul>
+    </section>
+    <section id="cv" class="container mt-5">
+      <h2>CV</h2>
+      <button id="cvBtn2" class="btn btn-primary" onclick="location.href='cv.pdf'">Open CV</button>
+      <p id="cvNote2" style="display: none;">Add cv.pdf to enable the CV button</p>
+    </section>
+    <section id="contact" class="container mt-5">
+      <h2>Contact</h2>
+      <p>Email: <span id="email">arunaharikant66@gmail.com</span></p>
+      <a id="mailLink" href="mailto:arunaharikant66@gmail.com" class="btn btn-primary">Email</a>
+      <button id="copyEmailBtn" class="btn btn-secondary">Copy email</button>
+    </section>
+    <section id="edit-checklist" class="container mt-5">
+      <h2>Edit Checklist</h2>
+      <ul>
+        <li>Update profile image</li>
+        <li>Add more projects</li>
+        <li>Update experience section</li>
+      </ul>
+    </section>
+  </main>
+  <footer class="container mt-5">
+    <p>&copy; <span id="year"></span> Aruna. Unofficial student page. 'International Space University' named here for study use only.</p>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <script>
+    // Theme toggle
+    const themeToggle = document.getElementById('themeToggle');
+    themeToggle.addEventListener('click', () => {
+      const currentTheme = document.body.getAttribute('data-bs-theme');
+      const newTheme = currentTheme === 'light' ? 'dark' : 'light';
+      document.body.setAttribute('data-bs-theme', newTheme);
+      localStorage.setItem('theme', newTheme);
+    });
+
+    // CV check
+    fetch('cv.pdf', { method: 'HEAD' })
+      .then(response => {
+        if (response.ok) {
+          document.getElementById('cvBtn').style.display = 'inline-block';
+          document.getElementById('cvNote').style.display = 'none';
+          document.getElementById('cvBtn2').style.display = 'inline-block';
+          document.getElementById('cvNote2').style.display = 'none';
+        }
+      })
+      .catch(() => {});
+
+    // Contact helpers
+    document.getElementById('copyEmailBtn').addEventListener('click', () => {
+      navigator.clipboard.writeText(document.getElementById('email').textContent);
+      alert('Email copied to clipboard!');
+    });
+
+    // Set current year
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Set theme from localStorage
+    const savedTheme = localStorage.getItem('theme');
+    if (savedTheme) {
+      document.body.setAttribute('data-bs-theme', savedTheme);
+    }
+  </script>
+</body>
+</html>
