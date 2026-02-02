@@ -3,148 +3,112 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Aruna - Space Technology to Power Future</title>
-  <meta name="description" content="Personal website of Aruna, Master of Space Studies student at ISU specializing in Space Engineering.">
-  <meta name="author" content="Aruna">
+  <title>Aruna | Space Systems & AI Optimization</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
   <style>
-    :root {
-      --isu-blue: #0b3d91;
-      --isu-gold: #f0b429;
-      --isu-ink: #0d1b2a;
-    }
-    body {
-      background-color: var(--isu-ink);
-      color: #FFFFFF;
-      font-family: system-ui, sans-serif;
-    }
-    h1, h2, h3, .card-title { color: var(--isu-gold); }
-    .navbar { background-color: var(--isu-blue); }
-    .nav-link, .navbar-brand { color: var(--isu-gold) !important; }
-    .card { background-color: #1a1d23; border: 1px solid #333; color: white; transition: transform 0.2s; }
-    .card:hover { transform: translateY(-5px); }
-    .btn-gold { background-color: var(--isu-gold); color: var(--isu-blue); font-weight: bold; }
-    .btn-gold:hover { background-color: #d49e20; }
-    .badge-skill { background-color: var(--isu-blue); color: white; margin-right: 5px; }
+    :root { --isu-blue: #0b3d91; --isu-gold: #f0b429; --space-black: #050a0f; }
+    body { background-color: var(--space-black); color: #e0e0e0; font-family: 'Inter', sans-serif; }
+    .hero-section { padding: 100px 0; background: linear-gradient(rgba(5,10,15,0.7), rgba(5,10,15,0.7)), url('space.gif'); background-size: cover; }
+    h1, h2, .text-gold { color: var(--isu-gold); }
+    .card { background: #111827; border: 1px solid #1f2937; color: white; transition: 0.3s; }
+    .card:hover { border-color: var(--isu-gold); transform: translateY(-5px); }
+    .btn-gold { background-color: var(--isu-gold); color: var(--isu-blue); fw-bold; }
+    .badge-tech { background: var(--isu-blue); font-size: 0.8rem; margin-right: 5px; }
   </style>
 </head>
-<body data-bs-theme="dark">
-  <img src="space.gif" style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: -1; object-fit: cover; opacity: 0.4;" />
-  
-  <nav class="navbar navbar-expand-lg sticky-top">
-    <div class="container">
-      <a class="navbar-brand" href="#">ARUNA</a>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-          <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
-          <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
-          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-        </ul>
-      </div>
-    </div>
-  </nav>
+<body>
 
-  <header class="container mt-5 py-5 text-center">
+<nav class="navbar navbar-expand-lg sticky-top navbar-dark" style="background: rgba(11, 61, 145, 0.9);">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="#">ARUNA</a>
+    <div class="navbar-nav ms-auto">
+      <a class="nav-link" href="#experience">Experience</a>
+      <a class="nav-link" href="#projects">Projects</a>
+      <a class="nav-link" href="#contact">Contact</a>
+    </div>
+  </div>
+</nav>
+
+<header class="hero-section text-center">
+  <div class="container">
     <h1 class="display-3 fw-bold">ARUNA</h1>
-    <p class="lead">Space Technology to Power Future | Fellow of the Royal Astronomical Society</p>
-    <div class="mt-4">
-      <a href="Curriculum_Vitae_TAS.pdf" class="btn btn-gold btn-lg me-2">Download CV</a>
-      <a href="#contact" class="btn btn-outline-light btn-lg">Get In Touch</a>
+    <p class="lead mb-4">Master of Space Studies | Fellow of the Royal Astronomical Society</p>
+    <div class="d-flex justify-content-center gap-3">
+      <a href="Curriculum_Vitae_TAS.pdf" class="btn btn-gold btn-lg">View CV</a>
+      <a href="https://www.linkedin.com/in/aruna-5a03151a5/" class="btn btn-outline-light btn-lg"><i class="bi bi-linkedin"></i></a>
     </div>
-  </header>
+  </div>
+</header>
 
-  <main class="container">
-    <section id="about" class="mb-5">
-      <h2>About</h2>
-      <p class="lead">Currently pursuing a Master of Space Studies at the International Space University (ISU)[cite: 16]. My expertise bridges <strong>Space Systems Engineering</strong> and <strong>Computational Physics</strong>[cite: 5, 12, 16]. I am particularly focused on AI-driven optimization for launch vehicles and leveraging archival space data to maximize mission science[cite: 43, 48].</p>
-      <div class="row mt-4">
-        <div class="col-md-6">
-          <h3>Core Expertise</h3>
-          <ul>
-            <li>Space/Ground Instrumentation Design [cite: 5, 8]</li>
-            <li>Computational Fluid Dynamics (CFD) [cite: 7, 111]</li>
-            <li>Machine Learning & AI Optimization [cite: 10, 51]</li>
-            <li>High-Performance Computing (HPC) [cite: 12, 93]</li>
-          </ul>
-        </div>
-        <div class="col-md-6">
-          <h3>Academic Foundations</h3>
-          <p>Holder of an MSc in Cosmology from the University of Sussex [cite: 16] and an MSc in Physics from IIT Mandi[cite: 16]. My research history includes cosmic re-ionisation signals and CMB lensing[cite: 18, 26].</p>
+<main class="container my-5">
+  <section id="about" class="mb-5">
+    <div class="row align-items-center">
+      <div class="col-lg-8">
+        <h2>Bridging Astrophysics & Space Engineering</h2>
+        <p>Currently specializing in <strong>Space Engineering and Applications</strong> at the International Space University[cite: 16]. My work focuses on the intersection of AI-driven aerodynamic optimization and archival space mission data[cite: 43, 48].</p>
+      </div>
+      <div class="col-lg-4">
+        <div class="p-3 border border-secondary rounded">
+          <h5 class="text-gold">Technical Stack</h5>
+          <small>Python, Machine Learning, CFD, AWS Parallel Cluster, AutoCAD, HPC[cite: 11, 93, 94, 110, 111, 113].</small>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section id="experience" class="mb-5">
-      <h2>Professional Experience</h2>
-      <div class="list-group">
-        <div class="list-group-item card mb-3 p-4">
-          <div class="d-flex justify-content-between">
-            <h5 class="mb-1">ESA Archival Research Visitor</h5>
-            <small>Sept 2025 - Present</small>
-          </div>
-          <p class="text-info">European Space Astronomy Centre (ESAC), Spain [cite: 44]</p>
-          <ul>
-            <li>Maximizing scientific output from the <strong>Planck space mission archive</strong>[cite: 43, 45].</li>
-            <li>Handling Planck Cosmic Microwave Background (CMB) data for advanced archival research[cite: 43, 44].</li>
-          </ul>
-        </div>
-        <div class="list-group-item card mb-3 p-4">
-          <div class="d-flex justify-content-between">
-            <h5 class="mb-1">AI Subject Matter Expert (Physics & Cosmology)</h5>
-            <small>Aug 2023 - 2025</small>
-          </div>
-          <p class="text-info">Outlier AI [cite: 59, 60]</p>
-          <ul>
-            <li>Trained advanced generative AI models to solve research-level physics problems through complex prompt engineering[cite: 61, 62].</li>
-            <li>Contributed to "Humanity's Last Exam" (HLE), a benchmark created by the Center for AI Safety and Scale AI[cite: 63].</li>
-          </ul>
+  <section id="experience" class="mb-5">
+    <h2 class="mb-4">Professional Milestones</h2>
+    <div class="card mb-3 p-4">
+      <div class="d-flex justify-content-between">
+        <h4 class="text-gold">ESA Archival Research Visitor</h4>
+        <span>2025 - Present [cite: 42]</span>
+      </div>
+      <p class="text-info">European Space Astronomy Centre (ESAC), Spain [cite: 44]</p>
+      <ul>
+        <li>Optimizing scientific output from the <strong>Planck CMB data</strong> archive[cite: 43, 45].</li>
+        <li>Gaining high-level research experience in mission archival data handling[cite: 46].</li>
+      </ul>
+    </div>
+    <div class="card p-4">
+      <div class="d-flex justify-content-between">
+        <h4 class="text-gold">AI Subject Matter Expert</h4>
+        <span>2023 - 2025 [cite: 60]</span>
+      </div>
+      <p class="text-info">Outlier AI</p>
+      <ul>
+        <li>Trained generative AI models on research-level Physics and Cosmology problems[cite: 61].</li>
+        <li>Contributed to "Humanity's Last Exam" (HLE) AI benchmark[cite: 63].</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2 class="mb-4">Mission Projects</h2>
+    <div class="row g-4">
+      <div class="col-md-6">
+        <div class="card h-100 p-3">
+          <h5>Project Umbrella: Mars dual-platform mission [cite: 52, 53]</h5>
+          <p class="small">Leading launch systems and propulsion design for a dual-platform Martian rover and aerial vehicle[cite: 55].</p>
+          <div><span class="badge badge-tech">Systems Engineering</span><span class="badge badge-tech">Propulsion</span></div>
         </div>
       </div>
-    </section>
-
-    <section id="projects" class="mb-5">
-      <h2>Key Projects</h2>
-      <div class="row g-4">
-        <div class="col-md-6">
-          <div class="card h-100">
-            <div class="card-body">
-              <h5 class="card-title">Martian Rover and Aerial Vehicle</h5>
-              <p class="card-text">Leading launch systems and propulsion design for a dual-platform Martian exploration mission[cite: 53, 55].</p>
-              <span class="badge badge-skill">Systems Engineering [cite: 58]</span>
-              <span class="badge badge-skill">Propulsion [cite: 55]</span>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-6">
-          <div class="card h-100">
-            <div class="card-body">
-              <h5 class="card-title">AI-Driven Aerodynamic Optimization</h5>
-              <p class="card-text">Developing an ML optimization framework integrating neural networks with CFD for small launch vehicles[cite: 48, 51].</p>
-              <span class="badge badge-skill">CFD [cite: 49]</span>
-              <span class="badge badge-skill">Neural Networks [cite: 51]</span>
-            </div>
-          </div>
+      <div class="col-md-6">
+        <div class="card h-100 p-3">
+          <h5>AI-Driven Aerodynamic Optimization [cite: 48]</h5>
+          <p class="small">Integrating neural networks with CFD simulations for small launch vehicle performance[cite: 51].</p>
+          <div><span class="badge badge-tech">ML</span><span class="badge badge-tech">CFD</span><span class="badge badge-tech">Add. Manufacturing</span></div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
+</main>
 
-    <section id="contact" class="py-5 text-center">
-      <h2>Contact</h2>
-      <p>Strasbourg, France [cite: 4]</p>
-      <div class="d-flex justify-content-center gap-3">
-        <a href="mailto:arunaharikant66@gmail.com" class="btn btn-gold">Email Me [cite: 2]</a>
-        <a href="https://www.linkedin.com/in/aruna-5a03151a5/" class="btn btn-outline-light"><i class="bi bi-linkedin"></i> LinkedIn [cite: 2]</a>
-        <a href="https://arunaharikant.github.io/Aruna.github.io/" class="btn btn-outline-light"><i class="bi bi-github"></i> Portfolio [cite: 2]</a>
-      </div>
-    </section>
-  </main>
+<footer class="py-5 text-center border-top border-secondary mt-5">
+  <p id="contact">Contact: <a href="mailto:arunaharikant66@gmail.com" class="text-gold">arunaharikant66@gmail.com</a> [cite: 2]</p>
+  <p class="small text-muted">&copy; 2026 Aruna | Strasbourg, France [cite: 4]</p>
+</footer>
 
-  <footer class="container py-4 text-center border-top border-secondary">
-    <p>&copy; 2026 Aruna | Master of Space Studies [cite: 16]</p>
-  </footer>
-
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
