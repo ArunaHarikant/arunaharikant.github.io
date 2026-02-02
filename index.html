@@ -4,210 +4,147 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Aruna - Space Technology to Power Future</title>
-  <meta name="description" content="Personal website of Aruna, a Master of Space Studies student at ISU.">
+  <meta name="description" content="Personal website of Aruna, Master of Space Studies student at ISU specializing in Space Engineering.">
   <meta name="author" content="Aruna">
-  <meta property="og:title" content="Aruna - Space Technology to Power Future">
-  <meta property="og:description" content="Personal website of Aruna, a Master of Space Studies student at ISU.">
-  <meta property="og:type" content="website">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
   <style>
     :root {
       --isu-blue: #0b3d91;
       --isu-gold: #f0b429;
       --isu-ink: #0d1b2a;
-      --isu-sky: #e6f1ff;
     }
     body {
-      font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+      background-color: var(--isu-ink);
       color: #FFFFFF;
+      font-family: system-ui, sans-serif;
     }
-    h1, h2, h3, h4, h5, h6 {
-      color: var(--isu-gold);
-    }
-    .navbar {
-      background-color: var(--isu-blue);
-    }
-    .navbar-brand, .nav-link {
-      color: var(--isu-gold) !important;
-    }
-    .theme-toggle {
-      background-color: var(--isu-gold);
-      border: none;
-      padding: 0.5rem;
-      border-radius: 0.25rem;
-    }
-    /* Center the navigation items */
-    .navbar-nav {
-      margin: 0 auto;
-    }
+    h1, h2, h3, .card-title { color: var(--isu-gold); }
+    .navbar { background-color: var(--isu-blue); }
+    .nav-link, .navbar-brand { color: var(--isu-gold) !important; }
+    .card { background-color: #1a1d23; border: 1px solid #333; color: white; transition: transform 0.2s; }
+    .card:hover { transform: translateY(-5px); }
+    .btn-gold { background-color: var(--isu-gold); color: var(--isu-blue); font-weight: bold; }
+    .btn-gold:hover { background-color: #d49e20; }
+    .badge-skill { background-color: var(--isu-blue); color: white; margin-right: 5px; }
   </style>
 </head>
-<body data-bs-theme="light">
-  <img src="space.gif" style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: -1; object-fit: cover;" />
-  <a href="#main" class="visually-hidden-focusable">Skip to content</a>
-  <header>
-    <nav class="navbar navbar-expand-lg sticky-top">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">Aruna</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
-            <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-            <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
-            <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
-            <li class="nav-item"><a class="nav-link" href="#cv">CV</a></li>
-            <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-          </ul>
-          <button id="themeToggle" class="theme-toggle" aria-label="Toggle theme"><i class="bi bi-moon-stars"></i></button>
-        </div>
+<body data-bs-theme="dark">
+  <img src="space.gif" style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: -1; object-fit: cover; opacity: 0.4;" />
+  
+  <nav class="navbar navbar-expand-lg sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">ARUNA</a>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
       </div>
-    </nav>
-    <div class="container mt-5">
-      <h1>Aruna</h1>
-      <p>Space Technology to Power Future</p>
-      <button class="btn" style="background-color: var(--isu-gold); border-color: var(--isu-gold); color: var(--isu-blue);" onclick="location.href='#projects'">Projects</button>
-      <button id="cvBtn" class="btn btn-secondary" onclick="location.href='cv.pdf'">CV</button>
-      <button class="btn btn-secondary" onclick="location.href='#contact'">Contact</button>
-      <p id="cvNote" style="display: none;">Add cv.pdf to enable the CV button</p>
+    </div>
+  </nav>
+
+  <header class="container mt-5 py-5 text-center">
+    <h1 class="display-3 fw-bold">ARUNA</h1>
+    <p class="lead">Space Technology to Power Future | Fellow of the Royal Astronomical Society</p>
+    <div class="mt-4">
+      <a href="Curriculum_Vitae_TAS.pdf" class="btn btn-gold btn-lg me-2">Download CV</a>
+      <a href="#contact" class="btn btn-outline-light btn-lg">Get In Touch</a>
     </div>
   </header>
-  <main id="main">
-    <section id="about" class="container mt-5">
+
+  <main class="container">
+    <section id="about" class="mb-5">
       <h2>About</h2>
-      <p>I'm a space technology professional specializing in space instrumentation and mission design. Currently pursuing a Master of Space Studies (Track: Space Engineering and Applications) at the International Space University, Strasbourg France. I combine expertise in optical design, space systems engineering, and advanced data analytics.
-        My background bridges astrophysics research and practical engineering—from analyzing Planck CMB data through the ESA Archival Research Visitor Programme to developing machine learning algorithms for cosmic signal extraction. I leverage Python, high-performance computing, and ML techniques to solve complex problems in space applications.
-        I'm passionate about transforming scientific requirements into operational space technology. My focus areas include space/ground instrumentation design, optical systems, and computational methods for mission analysis. I seek opportunities to contribute to next-generation space missions where innovation meets exploration.</p>
-      <h3>Focus</h3>
-      <ul>
-        <li>Space Engineering</li>
-        <li>Space/Ground Design and Instrumentation</li>
-        <li>Python Programming</li>
-      </ul>
-      <h3>Tools</h3>
-      <ul>
-        <li>Python</li>
-        <li>Machine Learning Algorithms</li>
-        <li>High Performance Computing</li>
-      </ul>
+      <p class="lead">Currently pursuing a Master of Space Studies at the International Space University (ISU)[cite: 16]. My expertise bridges <strong>Space Systems Engineering</strong> and <strong>Computational Physics</strong>[cite: 5, 12, 16]. I am particularly focused on AI-driven optimization for launch vehicles and leveraging archival space data to maximize mission science[cite: 43, 48].</p>
+      <div class="row mt-4">
+        <div class="col-md-6">
+          <h3>Core Expertise</h3>
+          <ul>
+            <li>Space/Ground Instrumentation Design [cite: 5, 8]</li>
+            <li>Computational Fluid Dynamics (CFD) [cite: 7, 111]</li>
+            <li>Machine Learning & AI Optimization [cite: 10, 51]</li>
+            <li>High-Performance Computing (HPC) [cite: 12, 93]</li>
+          </ul>
+        </div>
+        <div class="col-md-6">
+          <h3>Academic Foundations</h3>
+          <p>Holder of an MSc in Cosmology from the University of Sussex [cite: 16] and an MSc in Physics from IIT Mandi[cite: 16]. My research history includes cosmic re-ionisation signals and CMB lensing[cite: 18, 26].</p>
+        </div>
+      </div>
     </section>
-    <section id="projects" class="container mt-5">
-      <h2>Projects</h2>
-      <div class="row g-3">
-        <div class="col-md-6 d-flex">
-          <div class="card h-100 flex-fill" style="background-color: #1a1d23; color: white;">
-            <div class="card-body d-flex flex-column">
-              <h5 class="card-title">CMB Lensing Constraints on Late Time Growth of Structures</h5>
-              <p class="card-text">MSc Thesis</p>
-              <ul class="list-unstyled">
-                <li>Tool: CAMB</li>
-                <li>Method: Bayesian analysis</li>
-                <li>Outcome: Phenomenological scale-independent model</li>
-              </ul>
-              <div class="mt-auto">
-                <button class="btn" style="background-color: var(--isu-gold); border-color: var(--isu-gold); color: var(--isu-blue);">Demo</button>
-                <button class="btn btn-secondary">Code</button>
-              </div>
+
+    <section id="experience" class="mb-5">
+      <h2>Professional Experience</h2>
+      <div class="list-group">
+        <div class="list-group-item card mb-3 p-4">
+          <div class="d-flex justify-content-between">
+            <h5 class="mb-1">ESA Archival Research Visitor</h5>
+            <small>Sept 2025 - Present</small>
+          </div>
+          <p class="text-info">European Space Astronomy Centre (ESAC), Spain [cite: 44]</p>
+          <ul>
+            <li>Maximizing scientific output from the <strong>Planck space mission archive</strong>[cite: 43, 45].</li>
+            <li>Handling Planck Cosmic Microwave Background (CMB) data for advanced archival research[cite: 43, 44].</li>
+          </ul>
+        </div>
+        <div class="list-group-item card mb-3 p-4">
+          <div class="d-flex justify-content-between">
+            <h5 class="mb-1">AI Subject Matter Expert (Physics & Cosmology)</h5>
+            <small>Aug 2023 - 2025</small>
+          </div>
+          <p class="text-info">Outlier AI [cite: 59, 60]</p>
+          <ul>
+            <li>Trained advanced generative AI models to solve research-level physics problems through complex prompt engineering[cite: 61, 62].</li>
+            <li>Contributed to "Humanity's Last Exam" (HLE), a benchmark created by the Center for AI Safety and Scale AI[cite: 63].</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="mb-5">
+      <h2>Key Projects</h2>
+      <div class="row g-4">
+        <div class="col-md-6">
+          <div class="card h-100">
+            <div class="card-body">
+              <h5 class="card-title">Martian Rover and Aerial Vehicle</h5>
+              <p class="card-text">Leading launch systems and propulsion design for a dual-platform Martian exploration mission[cite: 53, 55].</p>
+              <span class="badge badge-skill">Systems Engineering [cite: 58]</span>
+              <span class="badge badge-skill">Propulsion [cite: 55]</span>
             </div>
           </div>
         </div>
-        <div class="col-md-6 d-flex">
-          <div class="card h-100 flex-fill" style="background-color: #1a1d23; color: white;">
-            <div class="card-body d-flex flex-column">
-              <h5 class="card-title">Extract signals from Cosmic Re-ionisation using Machine Learning Algorithms</h5>
-              <p class="card-text">MSc Thesis</p>
-              <ul class="list-unstyled">
-                <li>Tool: Python</li>
-                <li>Method: Machine Learning</li>
-                <li>Outcome: ≥ 92% accuracy</li>
-              </ul>
-              <div class="mt-auto">
-                <button class="btn" style="background-color: var(--isu-gold); border-color: var(--isu-gold); color: var(--isu-blue);">Demo</button>
-                <button class="btn btn-secondary">Code</button>
-              </div>
+        <div class="col-md-6">
+          <div class="card h-100">
+            <div class="card-body">
+              <h5 class="card-title">AI-Driven Aerodynamic Optimization</h5>
+              <p class="card-text">Developing an ML optimization framework integrating neural networks with CFD for small launch vehicles[cite: 48, 51].</p>
+              <span class="badge badge-skill">CFD [cite: 49]</span>
+              <span class="badge badge-skill">Neural Networks [cite: 51]</span>
             </div>
           </div>
         </div>
       </div>
     </section>
-    <section id="experience" class="container mt-5">
-      <h2>Experience</h2>
-      <ul class="list-group">
-        <li class="list-group-item" style="background-color: #1a1d23; color: white;">
-          <h5>Outlier AI</h5>
-          <p>Prompt Engineer (Oct 2023 - Present)</p>
-          <p>Trained AI models to solve research-level Physics and Cosmology problems.</p>
-        </li>
-        <li class="list-group-item" style="background-color: #1a1d23; color: white;">
-          <h5>European Space Agency</h5>
-          <p>Archival Research Visitor Programme</p>
-          <p>Worked with Planck CMB-ground (CMB) data.</p>
-        </li>
-      </ul>
-    </section>
-    <section id="cv" class="container mt-5">
-      <h2>CV</h2>
-      <button id="cvBtn2" class="btn" style="background-color: var(--isu-gold); border-color: var(--isu-gold); color: var(--isu-blue);" onclick="location.href='cv.pdf'">Open CV</button>
-      <p id="cvNote2" style="display: none;">Add cv.pdf to enable the CV button</p>
-    </section>
-    <section id="contact" class="container mt-5">
+
+    <section id="contact" class="py-5 text-center">
       <h2>Contact</h2>
-      <p>Email: <span id="email" style="color: white;">arunaharikant66@gmail.com</span></p>
-      <a id="mailLink" href="mailto:arunaharikant66@gmail.com" class="btn" style="background-color: var(--isu-gold); border-color: var(--isu-gold); color: var(--isu-blue);">Email</a>
-      <button id="copyEmailBtn" class="btn btn-secondary">Copy email</button>
-    </section>
-    <section id="edit-checklist" class="container mt-5">
-      <h2>Edit Checklist</h2>
-      <ul>
-        <li>Update profile image</li>
-        <li>Add more projects</li>
-        <li>Update experience section</li>
-      </ul>
+      <p>Strasbourg, France [cite: 4]</p>
+      <div class="d-flex justify-content-center gap-3">
+        <a href="mailto:arunaharikant66@gmail.com" class="btn btn-gold">Email Me [cite: 2]</a>
+        <a href="https://www.linkedin.com/in/aruna-5a03151a5/" class="btn btn-outline-light"><i class="bi bi-linkedin"></i> LinkedIn [cite: 2]</a>
+        <a href="https://arunaharikant.github.io/Aruna.github.io/" class="btn btn-outline-light"><i class="bi bi-github"></i> Portfolio [cite: 2]</a>
+      </div>
     </section>
   </main>
-  <footer class="container mt-5">
-    <p>&copy; <span id="year"></span> Aruna. Unofficial ISU student page. For official ISU info, visit https://www.isunet.edu/.</p>
+
+  <footer class="container py-4 text-center border-top border-secondary">
+    <p>&copy; 2026 Aruna | Master of Space Studies [cite: 16]</p>
   </footer>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-  <script>
-    // Theme toggle
-    const themeToggle = document.getElementById('themeToggle');
-    themeToggle.addEventListener('click', () => {
-      const currentTheme = document.body.getAttribute('data-bs-theme');
-      const newTheme = currentTheme === 'light' ? 'dark' : 'light';
-      document.body.setAttribute('data-bs-theme', newTheme);
-      localStorage.setItem('theme', newTheme);
-    });
 
-    // CV check
-    fetch('cv.pdf', { method: 'HEAD' })
-      .then(response => {
-        if (response.ok) {
-          document.getElementById('cvBtn').style.display = 'inline-block';
-          document.getElementById('cvNote').style.display = 'none';
-          document.getElementById('cvBtn2').style.display = 'inline-block';
-          document.getElementById('cvNote2').style.display = 'none';
-        }
-      })
-      .catch(() => {});
-
-    // Contact helpers
-    document.getElementById('copyEmailBtn').addEventListener('click', () => {
-      navigator.clipboard.writeText(document.getElementById('email').textContent);
-      alert('Email copied to clipboard!');
-    });
-
-    // Set current year
-    document.getElementById('year').textContent = new Date().getFullYear();
-
-    // Set theme from localStorage
-    const savedTheme = localStorage.getItem('theme');
-    if (savedTheme) {
-      document.body.setAttribute('data-bs-theme', savedTheme);
-    }
-    console.log("GIF file path:", "space.gif");
-  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
